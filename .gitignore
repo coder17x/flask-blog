@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# PyCharm
+/.idea/
+
+# flask-blog application
+/flask-blog-env/
