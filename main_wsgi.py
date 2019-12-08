@@ -1,12 +1,23 @@
 # -*- encoding: utf-8 -*-
-from flask import Flask
+import os
+import sys
 
-app = Flask('blog')
+from flask import Flask, render_template
+
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, PROJECT_PATH)
+
+app = Flask('blog', static_folder="../static")
+
+# DEBUG
+app.debug = True
+app.config.EXPLAIN_TEMPLATE_LOADING = True
+# END DEBUG
 
 
 @app.route('/', methods=['GET', ])
 def index():
-    return 'My flask-blog working!'
+    return render_template("index.html.j2", title="Blog site")
 
 
 application = app.wsgi_app
