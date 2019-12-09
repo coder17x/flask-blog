@@ -133,3 +133,8 @@ dmypy.json
 
 # flask-blog application
 /flask-blog-env/
+
+# css and js sources
+/static/js/jquery-3.4.1.js
+/static/js/bootstrap.js
+/static/css/bootstrap.css

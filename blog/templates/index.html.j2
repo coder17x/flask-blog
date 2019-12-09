@@ -7,28 +7,158 @@
 {% endblock %}
 
 {% block body_content %}
-<div class="container-fluid">
-    <div class="row border align-items-start">
-        <div id="header" class="col-12">
-            Верхняя часть
-        </div>
-    </div>
-
-    <div id="middle" class="row align-items-center">
-        <div id="left-side" class="border col-2">
-            Левая часть
-        </div>
-        <div id="center" class="border col-8">
-            Средняя часть
-        </div>
-        <div id="right-side" class="border col-2">
-            Правая часть
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div id="footer" class="col-12">
-        Нижняя часть
-    </div>
-</div>
+	<div class="wrapper container">
+		<header>
+			<a href="/"><img src="static/images/st-nikolay-100x121.jpg" alt="Blog's logo"></a>
+			<form name="search" action="#" method="get" class="form-inline form-search float-right">
+				<div class="input-group">
+					<label class="sr-only" for="searchInput">Поиск</label>
+					<input class="form-control" id="searchInput" type="text" name="search" placeholder="Search">
+					<div class="input-group-btn">
+						<button type="submit" class="btn btn-primary">Искать</button>
+					</div>
+				</div>
+			</form>
+		</header>
+		<nav class="navbar navbar-expand">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="/home/">Новости</a></li>
+				<li class="nav-item active"><a class="nav-link" href="/about/">О храме</a></li>
+				<li class="nav-item"><a class="nav-link" href="/services/">Расписание Богослужений</a></li>
+				<li class="nav-item"><a class="nav-link" href="/partners/">Фотогалерея</a></li>
+				<li class="nav-item"><a class="nav-link" href="/customers/">Воскресная школа</a></li>
+				<li class="nav-item"><a class="nav-link" href="/projects/">Паломничество</a></li>
+				<li class="nav-item"><a class="nav-link" href="/contact/">Контакты</a></li>
+				<li class="nav-item"><a class="nav-link" href="/careers/">Вход</a></li>
+			</ul>
+		</nav>
+		<div class="heading">
+			<h1>О храме</h1>
+		</div>
+		<div class="row">
+			<aside class="col-md-4">
+				<ul class="list-group submenu">
+					<li class="list-group-item active">Lorem ipsum</li>
+					<li class="list-group-item"><a href="/donec/">Donec tincidunt laoreet</a></li>
+					<li class="list-group-item"><a href="/vestibulum/">Vestibulum elit</a></li>
+					<li class="list-group-item"><a href="/etiam/">Etiam pharetra</a></li>
+					<li class="list-group-item"><a href="/phasellus/">Phasellus placerat</a></li>
+					<li class="list-group-item"><a href="/cras/">Cras et nisi vitae odio</a></li>
+				</ul>
+				<div class="panel panel-primary">
+					<div class="panel-heading">Our offices</div>
+					<div class="panel-body">
+						<img src="static/images/map.png" class="img-responsive" alt="Our offices">
+					</div>
+				</div>
+			</aside>
+			<section class="col-md-8">
+				<div class="jumbotron">
+					<blockquote>
+						<p>
+							“Quisque in enim velit, at dignissim est. nulla ul corper, dolor ac pellentesque placerat, justo tellus gravida erat, vel porttitor libero erat.”
+						</p>
+						<small>John Doe, Lorem Ipsum</small>
+					</blockquote>
+				</div>
+				<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce leo massa, luctus convallis blandit quis, sollicitudin sed enim. Nunc ac laoreet leo, ut ornare neque. Integer tempus venenatis tellus eu tincidunt. Cras auctor massa urna. Proin dapibus consequat augue, vel semper quam volutpat vitae. Curabitur imperdiet orci sit amet diam lacinia varius. Pellentesque arcu nisi, feugiat et risus sed, posuere fringilla velit.
+</p><p>
+Suspendisse a nisi sit amet ex ultricies viverra. In feugiat tellus eu lorem tempus, eu eleifend arcu vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at pellentesque magna, vel porttitor nulla. Integer hendrerit dolor tincidunt mauris viverra, at porttitor nunc porta. Nulla consequat, libero ut ultrices facilisis, erat tortor laoreet nisl, ac venenatis nunc magna a sem. Suspendisse mauris lorem, posuere sit amet tristique sed, efficitur non lacus. Nullam pretium metus eu aliquet egestas. Etiam sit amet gravida mauris.
+</p><p>
+Fusce molestie imperdiet odio ac pharetra. Nullam tempor at erat vitae porta. Sed finibus tempus lectus vitae tincidunt. Maecenas semper dui a lobortis suscipit. Aliquam congue lorem vitae purus convallis, vel feugiat ex ornare. Maecenas a egestas dolor, sit amet tristique libero. Duis ornare diam ut lorem posuere scelerisque. Ut commodo, elit id venenatis interdum, ligula sem ullamcorper diam, ut iaculis odio mauris et arcu. Integer viverra mauris ac faucibus commodo. Nunc et congue est, eu congue purus. Sed varius tristique lectus, ac mattis orci auctor non. Ut venenatis elementum tortor, eget egestas libero ornare et. Mauris feugiat sapien et imperdiet facilisis.
+				</p>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="static/images/about-1.png" alt="" class="thumbnail">
+					</div>
+					<div class="col-md-12">
+						<img src="static/images/about-2.png" alt="" class="thumbnail">
+					</div>
+				</div>
+				<h2>Our team</h2>
+				<div class="team">
+					<div class="row">
+						<div class="col col-md-4">
+							<img src="static/images/team/Doe.jpg" alt="John Doe" class="thumbnail">
+							<div class="caption">
+								<h3>John Doe</h3>
+								<p>ceo</p>
+							</div>
+						</div>
+						<div class="col col-md-4 col-md-offset-1">
+							<img src="static/images/team/Pittsley.jpg" alt="Saundra Pittsley" class="thumbnail">
+							<div class="caption">
+								<h3>Saundra Pittsley</h3>
+								<p>team leader</p>
+							</div>
+						</div>
+						…
+					</div>
+					<div class="row">
+						<div class="col col-md-4">
+							<img src="static/images/team/Nobriga.jpg" alt="Ericka Nobriga" class="thumbnail">
+							<div class="caption">
+								<h3>Ericka Nobriga</h3>
+								<p>art director</p>
+							</div>
+						</div>
+						<div class="col col-md-4 col-md-offset-1">
+							<img src="static/images/team/Rousselle.jpg" alt="Cody Rousselle" class="thumbnail">
+							<div class="caption">
+								<h3>Cody Rousselle</h3>
+								<p>senior ui designer</p>
+							</div>
+						</div>
+						…
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 twitter">
+					<h3>Twitter feed</h3>
+					<time datetime="2012-10-23"><a href="#">23 oct</a></time>
+					<p>
+				In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean aug
+					</p>
+				</div>
+				<div class="col-md-2 sitemap">
+					<h3>Sitemap</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="/home/">Home</a>
+								<a href="/about/">About</a>
+								<a href="/services/">Services</a>
+							</div>
+							<div class="col-md-12">
+								<a href="/partners/">Partners</a>
+								<a href="/customers/">Support</a>
+								<a href="/contact/">Contact</a>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3 social">
+						<h3>Social networks</h3>
+						<a href="http://twitter.com/" class="social-icon twitter"></a>
+						<a href="http://facebook.com/" class="social-icon facebook"></a>
+						<a href="http://plus.google.com/" class="social-icon google-plus"></a>
+						<a href="http://vimeo.com/" class="social-icon-small vimeo"></a>
+						<a href="http://youtube.com/" class="social-icon-small youtube"></a>
+						<a href="http://flickr.com/" class="social-icon-small flickr"></a>
+						<a href="http://instagram.com/" class="social-icon-small instagram"></a>
+						<a href="/rss/" class="social-icon-small rss"></a>
+				</div>
+				<div class="col-md-3 footer-logo">
+					<a href="/"><img src="" alt="Whitesquare logo"></a>
+					<p>
+						Copyright © 2012 Whitesquare. A <a href="http://pcklab.com">pcklab</a> creation
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 {% endblock %}
